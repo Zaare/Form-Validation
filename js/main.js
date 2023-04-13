@@ -110,4 +110,8 @@ function submitFormData(name, phone, email, password) {
   console.log(
     `Name: ${name}, Phone: ${phone}, Email: ${email}, Password: ${password}`
   );
+  // Display a success message
+  alert("Form submitted successfully!");
+  // Reset the form
+  form.reset();
 }
