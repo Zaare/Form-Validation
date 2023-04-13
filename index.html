@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form id="Form">
+        <h2>Form Validation</h2>
+
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name">
+            <li class="error" id="nameError">Please enter your name.</li>
+        </div>
+
+        <div>
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone">
+            <li class="error" id="phoneError">Please enter a valid phone number, with 11 digits.</div>
+        </div>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+            <li class="error" id="emailError">Please enter a valid email address, with @ and .</div>
+        </div>
+
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password">
+            <li class="error" id="passwordError">Please enter a valid password, with at least 8 characters,1 uppercase, 1 lowercase and 1 number.</li>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
